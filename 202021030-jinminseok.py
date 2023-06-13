@@ -18,7 +18,7 @@ w, mag, phase = s1.bode(frequencies)
 # Streamlit 앱 구성
 st.title('202021030 진민석')
 st.subheader('<폐루프 전달함수>')
-st.write('L(s) = 100/(s^2 + 5s + 106)')
+st.write('L(s) = 100/(s^2 + 5s + 100)')
 
 # 전달함수 그래프
 st.header("Transfer Function Response")
@@ -34,7 +34,7 @@ st.header("Bode Plot")
 fig2, (ax2_mag, ax2_phase) = plt.subplots(2, 1)
 ax2_mag.semilogx(w, mag)
 ax2_mag.set_ylabel('Magnitude [dB]')
-ax2_mag.set_title('Bode plot of G(s) = 100 / (s^2 + 5s + 106)')
+ax2_mag.set_title('Bode plot of G(s) = 100 / (s^2 + 5s + 100)')
 ax2_phase.semilogx(w, phase)
 ax2_phase.set_xlabel('Frequency [rad/s]')
 ax2_phase.set_ylabel('Phase [degrees]')
